@@ -1,9 +1,11 @@
-import './App.css'
+import LoginLayout from "./layouts/LoginLayout"
+import RootLayout from "./layouts/RootLayout"
 
 function App() {
   return (
     <>
-      <h1 className='text-white bg-slate-600 font-mono text-3xl font-bold'>Setup tailwind + react vite project</h1>        
+      <RootLayout/>
+      <LoginLayout/>
     </>
   )
 }
