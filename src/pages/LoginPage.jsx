@@ -14,7 +14,6 @@ function LoginPage(){
                     </h3>
                 </div>
             </section>
-            
         </>
     )
 }
