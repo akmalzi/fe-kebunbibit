@@ -1,7 +1,14 @@
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+
 function Navigasi(){
     return (
         <>
-            <h1>Ini halaman navigasi</h1>
+            <Navbar/>
+            <section>
+                <h1>Ini halaman navigasi</h1>
+            </section>
+            <Footer/>
         </>
     )
 }

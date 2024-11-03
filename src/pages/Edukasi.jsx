@@ -1,7 +1,14 @@
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+
 function Edukasi(){
     return(
         <>
-            <h1>Ini halaman edukasi</h1>
+            <Navbar/>
+            <section>
+                <h1>Ini halaman edukasi</h1>
+            </section>
+            <Footer/>
         </>
     )
 }

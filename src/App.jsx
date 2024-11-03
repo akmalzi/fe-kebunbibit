@@ -1,5 +1,5 @@
-import LoginLayout from "./layouts/LoginLayout"
 import RootLayout from "./layouts/RootLayout"
+import LoginLayout from "./layouts/LoginLayout"
 
 function App() {
   return (

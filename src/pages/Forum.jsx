@@ -1,7 +1,14 @@
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+
 function Forum(){
     return(
         <>
-            <h1>Ini halaman forum</h1>
+            <Navbar/>
+            <section>
+                <h1>Ini halaman forum</h1>
+            </section>
+            <Footer/>
         </>
     )
 }

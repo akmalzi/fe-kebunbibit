@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom"
 import ReviewCard from "./ReviewCard"
 import reviewData from "../data/dummy/customers-review.json"
+
 function CustomerReviews(){
     return(
         <>
@@ -12,7 +14,7 @@ function CustomerReviews(){
                     ))}
                 </div>
                 <div className="w-full flex mt-2 justify-end font-bold">
-                    <a href="" className="text-primaryColor text-lg mr-2">Lihat selanjutnya</a>
+                    <Link to="" className="text-primaryColor text-lg mr-2">Lihat selanjutnya</Link>
                 </div>
             </section>
         </>
