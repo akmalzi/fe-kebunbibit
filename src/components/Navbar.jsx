@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import imgLogo from "/assets/logo-app.png"
+import PopupButton from "./PopUpButton"
 
 function Navbar(){
     return (
@@ -21,10 +22,7 @@ function Navbar(){
                             <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/forum"}>Forum</Link>
                         </li>
                         <li>
-                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/navigasi"}>Navigasi</Link>
-                        </li>
-                        <li>
-                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/fasilitas"}>Fasilitas</Link>
+                            <PopupButton/>
                         </li>
                     </ul>
                 </div>

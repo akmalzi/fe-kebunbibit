@@ -1,6 +1,7 @@
 import {Routes, Route} from "react-router-dom"
 import HomePage from "../pages/HomePage"
 import Katalog from "../pages/Katalog"
+import DetailKatalog from "../pages/DetailKatalog"
 import Edukasi from "../pages/Edukasi"
 import Forum from "../pages/Forum"
 import Navigasi from "../pages/Navigasi"
@@ -13,6 +14,7 @@ function RootLayout(){
             <Routes>
                 <Route path={"/"} element={<HomePage/>}/>
                 <Route path={"/katalog"} element={<Katalog/>}/>
+                <Route path="/katalog/:parameter" element={<DetailKatalog />} />
                 <Route path={"/edukasi"} element={<Edukasi/>}/>
                 <Route path={"/forum"} element={<Forum/>}/>
                 <Route path={"/navigasi"} element={<Navigasi/>}/>

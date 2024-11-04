@@ -1,7 +1,4 @@
-import ImageHero from "/assets/hero2-img.png"
-
 function SecondHero(){
-    console.log(ImageHero)
     return (
         <>
             <section className="flex px-[18px] justify-center">
@@ -17,7 +14,7 @@ function SecondHero(){
                             </p>
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-center bg-[url('./assets/hero2-img.png')] rounded-3xl bg-cover min-h-[371px] shadow-2xl">
+                    <div className="w-1/2 flex justify-center bg-[url('./assets/heroImg/hero2-img.png')] rounded-3xl bg-cover min-h-[371px] shadow-2xl">
                     </div>
                 </div>
             </section>

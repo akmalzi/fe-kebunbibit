@@ -7,11 +7,14 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
 function HomePage() {
+    const heroTitle = "Jelajahi Keindahan Kebun Bibit Wonorejo"
+    const heroSubtitle = "Tempat di mana alam dan kehijauan"
+
     return (
         <>
             <Navbar/>
             <section className="pb-4">
-                <FirstHero />
+                <FirstHero title={heroTitle} subTitle={heroSubtitle}/>
                 <SecondHero/>
                 <Facilities/>
                 <CustomerReviews/>

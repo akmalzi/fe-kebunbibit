@@ -1,12 +1,24 @@
-function FirstHero(){
+import { useState, useEffect} from "react"
+
+function FirstHero(props){
+    const [title, setTitle] = useState(null)
+    const [subTitle, setSubTitle] = useState(null)
+    const [imageUrl, setImageUrl] = useState(null)
+
+    useEffect(()=>{
+        setTitle(props.title)
+        setSubTitle(props.subTitle)
+        setImageUrl(props.imageUrl)
+    },[])
+
     return (
         <>
             <section className="px-[18px]">
-                <div className="w-full h-[604px] bg-[url('/assets/hero-img.png')] rounded-3xl bg-cover shadow-lg">
+                <div className="w-full h-[604px] rounded-3xl bg-cover shadow-lg"
+                style={{ backgroundImage: `url(${imageUrl})` }}>
                     <div className="relative top-0 py-10 px-14">
-                        <h1 className="text-[64px] font-bold text-white leading-[120%] drop-shadow-text">Jelajahi Keindahan <br />
-                        Kebun Bibit Wonorejo</h1>
-                        <h3 className="text-lg text-white font-semibold mt-2">Tempat di mana alam dan kehijauan </h3>
+                        <h1 className="text-[64px] font-bold text-white leading-[120%] drop-shadow-text w-4/6">{title}</h1>
+                        <h3 className="text-lg text-white font-semibold mt-2 w-3/5">{subTitle}</h3>
                     </div>
                 </div>
             </section>  
