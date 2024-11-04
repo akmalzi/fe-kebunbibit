@@ -18,7 +18,7 @@ function PopupButton() {
       </button>
 
       {isOpen && (
-        <div className="bg-primaryColor rounded-lg shadow-lg text-center text-white w-fit mt-2 absolute top-5 left-4">
+        <div className="bg-primaryColor rounded-lg shadow-lg text-center text-white w-fit mt-2 absolute top-5 left-4 z-50">
           <Link
             onClick={() => setIsOpen(false)}
             to="/navigasi"

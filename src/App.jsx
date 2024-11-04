@@ -6,10 +6,12 @@ import ForgotPassLayout from "./layouts/ForgotPassLayout"
 function App() {
   return (
     <>
-      <RootLayout/>
-      <LoginLayout/>
-      <RegisterLayout/>
-      <ForgotPassLayout/>
+      <div className="font-poppins">
+        <RootLayout/>
+        <LoginLayout/>
+        <RegisterLayout/>
+        <ForgotPassLayout/>
+      </div>
     </>
   )
 }

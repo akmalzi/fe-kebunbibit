@@ -3,16 +3,17 @@ import Footer from "../components/Footer"
 import FirstHero from "../components/FirstHero"
 import CardKatalog from "../components/CardKatalog"
 import dataKatalog from "../data/dummy/katalog.json" 
+import heroImg from "/assets/heroImg/katalog-heroImg.png"
 
 function Katalog(){
     const heroTitle = "Katalog Koleksi Bibit Kebun Bibit Wonorejo"
-    const heroSubtitle = "lorem ipsum ceritanya.."
+    const heroSubtitle = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas? Fugit neque debitis accusantium nihil deserunt error nisi et."
 
     return(
         <>
             <Navbar/>
             <section className="pb-4">
-                <FirstHero title={heroTitle} subTitle={heroSubtitle}/> 
+                <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/> 
                 <div className="flex flex-col items-center mt-[72px]">    
                     <h1 className="font-bold text-4xl text-center text-primaryColor mb-[64px]">Temukan ragam bibit unggul untuk <br />
                     mempercantik lingkungan Anda</h1>  

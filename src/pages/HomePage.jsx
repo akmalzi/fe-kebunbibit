@@ -5,6 +5,7 @@ import CustomerReviews from "../components/CustomersReview";
 import MapSection from "../components/MapSection";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import heroImg from "/assets/heroImg/homepage-heroImg.png"
 
 function HomePage() {
     const heroTitle = "Jelajahi Keindahan Kebun Bibit Wonorejo"
@@ -14,7 +15,7 @@ function HomePage() {
         <>
             <Navbar/>
             <section className="pb-4">
-                <FirstHero title={heroTitle} subTitle={heroSubtitle}/>
+                <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/>
                 <SecondHero/>
                 <Facilities/>
                 <CustomerReviews/>

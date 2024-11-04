@@ -3,12 +3,12 @@ function CardDetail({ judul, penjelasan, gambar }){
     <>
       <div className="w-full px-20 h-fit my-20">
         <div className="grid grid-cols-2 mt-11">
-          <img src={gambar} alt="" className="w-11/12 h-auto rounded-lg" />
+          <img src={gambar} alt="" className="w-11/12 h-auto rounded-lg shadow-lg" />
           <div className="flex flex-col justify-center">
-            <h2 className="text-[#73ba10] text-[40px] font-semibold font-poppins">
+            <h2 className="text-[#73ba10] text-[40px] font-bold font-poppins">
               {judul}
             </h2>
-            <p className="text-black text-2xl font-medium font-poppins mt-8">
+            <p className="text-black text-2xl font-regular font-poppins mt-8">
               {penjelasan}
             </p>
           </div>
