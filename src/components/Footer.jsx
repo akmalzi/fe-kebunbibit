@@ -43,7 +43,7 @@ function Footer(){
                                     <a href="#" className="hover:underline">FAQ</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="hover:underline">Kebijaka Privasi</a>
+                                    <a href="#" className="hover:underline">Kebijakan Privasi</a>
                                 </li>
                             </ul>
                         </div>

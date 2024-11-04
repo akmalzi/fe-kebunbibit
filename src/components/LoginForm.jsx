@@ -21,7 +21,7 @@ function LoginForm(){
                             <label htmlFor="remember" className="ms-2 text-sm font-regular text-black dark:text-gray-300">Ingatkan Saya</label>
                         </div>
                         <div>
-                            <Link className="text-blue-700">Lupa Password?</Link>
+                            <Link to="/forgot-password" className="text-blue-700">Lupa Password?</Link>
                         </div>
                     </div>
                 </div>

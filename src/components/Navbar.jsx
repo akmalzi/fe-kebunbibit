@@ -21,12 +21,15 @@ function Navbar(){
                             <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/forum"}>Forum</Link>
                         </li>
                         <li>
-                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/"}>Telusuri</Link>
+                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/navigasi"}>Navigasi</Link>
+                        </li>
+                        <li>
+                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/fasilitas"}>Fasilitas</Link>
                         </li>
                     </ul>
                 </div>
-                <div className="w-[136px] bg-slate-300 text-right">
-                    <Link to="/login">Login</Link>
+                <div className="w-[136px] text-center">
+                    <Link to="/login" className="py-2 px-5 border-[2px] border-black rounded-full">Login</Link>
                 </div>
             </nav>
         </>
