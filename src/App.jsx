@@ -9,31 +9,29 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading delay
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust time (ms) as needed
+    }, 2000);
 
-    return () => clearTimeout(timer); // Cleanup timer on component unmount
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="relative">
-      {/* Loading Screen Overlay */}
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-white z-50">
-          <img src={ImageLogo} className="w-[300px] mb-4 absolute top-[300px]" alt="" />
+      {/* Loading Screen */}
+      {isLoading ? (
+        <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
+          <img src={ImageLogo} className="w-[300px] mb-4 absolute top-[300px]" alt="Loading Logo" />
+        </div>
+      ) : (
+        // Main Content with Fade-in Transition
+        <div className="opacity-0 animate-fade-in">
+          <RootLayout />
+          <LoginLayout />
+          <RegisterLayout />
+          <ForgotPassLayout />
         </div>
       )}
-
-      {/* Main Content (hidden while loading) */}
-      <div className={isLoading ? 'opacity-0' : 'opacity-100 transition-opacity duration-500'}>
-        <RootLayout />
-        <LoginLayout />
-        <RegisterLayout />
-        <ForgotPassLayout />
-        {/* Add other main content components here */}
-      </div>
     </div>
   );
 }
