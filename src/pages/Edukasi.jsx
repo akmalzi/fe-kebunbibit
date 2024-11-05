@@ -6,6 +6,8 @@ import CardArtikel from "../components/CardArtikel"
 import heroImg from "/assets/heroImg/edukasi-heroImg.png"
 import dataEdukasi from "../data/dataEdukasi.json"
 import dataArtikel from "../data/dataArtikel.json"
+import FadeIn from "../Animation/ScrollAnimation/FadeIn"
+import SlideInUp from "../Animation/ScrollAnimation/SlideInUp"
 
 
 function Edukasi(){
@@ -17,32 +19,41 @@ function Edukasi(){
             <Navbar/>
             <section className="pb-6 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={titleHero} subTitle={heroSubtitle}/>
-                <h1 className="my-12 text-4xl font-bold text-center text-primaryColor">
-                Cara Menanam Bibit
-                </h1>
-                <div className="flex w-full justify-center">
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
-                        {dataEdukasi.map((value, index) => (
-                            <CardEdukasi
-                                key={index}
-                                gambar={value.gambar}
-                                langkah={value.langkah}
-                                tataCara={value.tataCara}
-                            />
+                <FadeIn>
+                    <h1 className="my-12 text-4xl font-bold text-center text-primaryColor">
+                    Cara Menanam Bibit
+                    </h1>
+                </FadeIn>
+                <FadeIn>
+                    <div className="flex w-full justify-center">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+                            {dataEdukasi.map((value, index) => (
+                                <CardEdukasi
+                                    key={index}
+                                    gambar={value.gambar}
+                                    langkah={value.langkah}
+                                    tataCara={value.tataCara}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </FadeIn>
+                
+                <SlideInUp>
+                    <h2 className="mt-12 text-center text-primaryColor font-bold text-3xl">Artikel Terkait</h2>
+                </SlideInUp>
+                <SlideInUp>
+                    <div className="flex justify-center mt-5 gap-9 mb-12">
+                        {dataArtikel.map((value, index) => (
+                        <CardArtikel
+                            key={index}
+                            gambar={value.gambar}
+                            judul={value.judul}
+                            link={value.link}
+                        />
                         ))}
                     </div>
-                </div>
-                <h2 className="mt-12 text-center text-primaryColor font-bold text-3xl">Artikel Terkait</h2>
-                <div className="flex justify-center mt-5 gap-9 mb-12">
-                    {dataArtikel.map((value, index) => (
-                    <CardArtikel
-                        key={index}
-                        gambar={value.gambar}
-                        judul={value.judul}
-                        link={value.link}
-                    />
-                    ))}
-                </div>
+                </SlideInUp>
             </section>
             <Footer/>
         </>

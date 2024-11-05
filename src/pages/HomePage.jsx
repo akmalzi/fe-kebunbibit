@@ -5,6 +5,10 @@ import CustomerReviews from "../components/CustomersReview";
 import MapSection from "../components/MapSection";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import SlideInUp from "../Animation/ScrollAnimation/SlideInUp"
+import SlideInRight from "../Animation/ScrollAnimation/SlideInRight"
+import SlideInLeft from "../Animation/ScrollAnimation/SlideInLeft"
+import FadeIn from "../Animation/ScrollAnimation/FadeIn"
 import heroImg from "/assets/heroImg/homepage-heroImg.png"
 
 function HomePage() {
@@ -16,10 +20,18 @@ function HomePage() {
             <Navbar/>
             <section className="pb-4 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/>
-                <SecondHero/>
-                <Facilities/>
-                <CustomerReviews/>
-                <MapSection/>
+                <SlideInLeft>
+                    <SecondHero/>
+                </SlideInLeft>
+                <SlideInRight>
+                    <Facilities/>
+                </SlideInRight>
+                <FadeIn>
+                    <CustomerReviews/>
+                </FadeIn>
+                <SlideInUp>
+                    <MapSection/>
+                </SlideInUp>
             </section>
             <Footer/>
         </>

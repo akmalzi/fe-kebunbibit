@@ -1,6 +1,6 @@
 import img from "/assets/heroImg/katalog-heroImg.png"
 import backIcon from "/assets/navigasi/back-icon.svg"
-import AutoImageChanger from "./AutoImageChanger"
+import AutoImageChanger from "../Animation/AutoImageChanger"
 
 function PopUpDetail(props){
     return(
