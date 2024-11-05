@@ -10,7 +10,7 @@ function Fasilitas(){
     return(
         <>
             <Navbar/>
-            <section className="pb-6">
+            <section className="pb-6 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={title} subTitle={subTitle}/>
                 <div className="grid grid-rows-2 grid-flow-col mx-28 mt-20 gap-6">
                     <div className="text-4xl font-semibold font-poppins my-4">

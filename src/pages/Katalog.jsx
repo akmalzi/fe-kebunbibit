@@ -12,7 +12,7 @@ function Katalog(){
     return(
         <>
             <Navbar/>
-            <section className="pb-4">
+            <section className="pb-4 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/> 
                 <div className="flex flex-col items-center mt-[72px]">    
                     <h1 className="font-bold text-4xl text-center text-primaryColor mb-[64px]">Temukan ragam bibit unggul untuk <br />

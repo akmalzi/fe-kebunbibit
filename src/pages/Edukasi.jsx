@@ -15,7 +15,7 @@ function Edukasi(){
     return(
         <>
             <Navbar/>
-            <section className="pb-6">
+            <section className="pb-6 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={titleHero} subTitle={heroSubtitle}/>
                 <h1 className="my-12 text-4xl font-bold text-center text-primaryColor">
                 Cara Menanam Bibit

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom"
 
-function PopupButton() {
+function TelusuriButton() {
   const [isOpen, setIsOpen] = useState(false);
 
   const togglePopup = () => {
@@ -40,4 +40,4 @@ function PopupButton() {
   );
 }
 
-export default PopupButton;
+export default TelusuriButton;

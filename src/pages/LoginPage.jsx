@@ -3,7 +3,7 @@ import LoginForm from "../components/LoginForm"
 function LoginPage(){
     return(
         <>
-            <section className="min-h-screen flex">
+            <section className="min-h-screen flex animate-fade-in">
                 <div className="min-h-screen w-1/2 flex flex-col items-center justify-center px-32">
                     <h2 className="text-[32px] w-full font-bold text-primaryColor mb-9">Hai, selamat datang kembali</h2>
                     <LoginForm/>

@@ -14,7 +14,7 @@ function HomePage() {
     return (
         <>
             <Navbar/>
-            <section className="pb-4">
+            <section className="pb-4 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/>
                 <SecondHero/>
                 <Facilities/>

@@ -2,7 +2,7 @@ function CardEdukasi({ gambar, langkah, tataCara }){
     return (
       <>
         <div className="border-2 w-[380px] h-[480px] rounded-lg">
-          <div className="flex">
+          <div className="flex px-2">
             <img
               width={100}
               src={gambar}

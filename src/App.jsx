@@ -17,14 +17,12 @@ function App() {
   }, []);
 
   return (
-    <div className="relative">
-      {/* Loading Screen */}
+    <div className="relative font-poppins">
       {isLoading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-          <img src={ImageLogo} className="w-[300px] mb-4 absolute top-[300px]" alt="Loading Logo" />
+          <img src={ImageLogo} className="w-[300px] absolute top-1/2 -translate-y-1/2" alt="Loading Logo" />
         </div>
       ) : (
-        // Main Content with Fade-in Transition
         <div className="opacity-0 animate-fade-in">
           <RootLayout />
           <LoginLayout />

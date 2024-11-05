@@ -15,7 +15,7 @@ function DetailKatalog(){
     <>
         <Navbar/>
         <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/>
-        <section className="min-h-fit" id="katalog">
+        <section className="min-h-fit animate-fade-in" id="katalog">
             {detailTanaman.map((value, index) => {
                 if (parameter === value.parameter) {
                     return (

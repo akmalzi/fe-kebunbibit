@@ -3,7 +3,7 @@ import RegisterForm from "../components/RegisterForm"
 function RegisterPage(){
     return (
         <>
-            <section className="min-h-screen flex">
+            <section className="min-h-screen flex animate-fade-in">
                 <div className="min-h-screen w-1/2 flex flex-col items-center justify-center px-32 order-2">
                     <h2 className="text-[32px] w-full font-bold text-primaryColor mb-9">Hai, selamat datang! Daftar sekarang untuk memulai!</h2>
                     <RegisterForm/>
