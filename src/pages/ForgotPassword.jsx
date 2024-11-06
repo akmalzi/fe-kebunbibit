@@ -1,4 +1,4 @@
-import ForgotPassForm from "../components/ForgotPassForm"
+import ForgotPassForm from "../components/ForgotPassword/ForgotPassForm"
 import ImageLogo from "/assets/logo-app.png"
 
 function ForgotPassword(){

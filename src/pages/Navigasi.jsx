@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import FirstHero from "../components/FirstHero"
-import Map from "../components/Map"
-import CardFavFasilitas from "../components/CardFavFasilitas"
+import Map from "../components/Navigasi/Map"
+import CardFavFasilitas from "../components/Navigasi/CardFavFasilitas"
 import heroImg from "/assets/heroImg/navigasi-heroImg.png"
 import SlideInUp from "../Animation/ScrollAnimation/SlideInUp"
 
