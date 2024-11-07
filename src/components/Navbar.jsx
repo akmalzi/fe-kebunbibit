@@ -5,7 +5,7 @@ import TelusuriButton from "./TelusuriButton"
 function Navbar(){
     return (
         <>
-            <nav className="flex w-full h-fit py-4 px-[18px] justify-between items-center">
+            <nav className="flex w-full h-fit py-4 px-[18px] justify-between items-center bg-white">
                 <img src={imgLogo} alt="" width="136px"/>
                 <div>
                     <ul className="flex">

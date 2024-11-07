@@ -15,45 +15,33 @@ function Fasilitas(){
             <section className="pb-6 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={title} subTitle={subTitle}/>
                 <SlideInUp>
-                    <div className="grid grid-rows-2 grid-flow-col mx-28 mt-20 gap-6">
-                        <div className="text-4xl font-semibold font-poppins my-4">
-                            Dapatkan pengalaman yang tak terlupakan di Kebun Bibit Wonorejo.
+                    <div className="flex max-h-[480px] my-20 px-24">
+                        <div className="w-3/5 flex flex-col justify-center pr-16">
+                            <div className="text-[42px] font-semibold leading-tight mb-4">
+                                Dapatkan pengalaman yang tak terlupakan di Kebun Bibit Wonorejo.
+                            </div>
+                            <div className="text-xl font-normal">
+                                Nikmati keindahan alam yang memukau di Kebun Bibit Wonorejo, di mana
+                                Anda dapat menjelajahi beragam flora cantik yang menghiasi setiap
+                                sudut kebun. Dari pohon-pohon rimbun hingga bunga-bunga
+                                berwarna-warni.
+                            </div>
                         </div>
-                        <div className="font-poppins text-xl font-normal">
-                            Nikmati keindahan alam yang memukau di Kebun Bibit Wonorejo, di mana
-                            Anda dapat menjelajahi beragam flora cantik yang menghiasi setiap
-                            sudut kebun. Dari pohon-pohon rimbun hingga bunga-bunga
-                            berwarna-warni.
-                        </div>
-                        <div className="row-span-2">
-                            <img
-                            src="./assets/edukasi/gridEdukasi1.png"
-                            className="hover:-translate-y-1 hover:scale-90 transition ease-in"
-                            width={245}
-                            alt=""
-                            />
-                        </div>
-                        <div className="">
-                            <img
-                            src="./assets/edukasi/gridEdukasi2.png"
-                            className="hover:-translate-y-1 hover:scale-90 transition ease-in"
-                            width={213}
-                            alt=""
-                            />
-                        </div>
-                        <div className="">
-                            <img
-                            src="./assets/edukasi/gridEdukasi3.png"
-                            className="hover:-translate-y-1 hover:scale-90 transition ease-in"
-                            width={213}
-                            alt=""
-                            />
+                        <div className="w-2/5 min-h-4 flex">
+                            <div className="hover:-translate-y-1 hover:scale-95 transition ease-in-out  w-1/2 h-full mr-4 bg-[url('./assets/edukasi/gridEdukasi1.png')] bg-cover bg-center rounded-[10px] p-[30px] shadow-lg">
+                            </div>
+                            <div className="w-1/2 flex flex-col">
+                                <div className="hover:-translate-y-1 hover:scale-95 transition ease-in-out bg-[url('./assets/edukasi/gridEdukasi2.png')] bg-cover rounded-[10px] bg-center w-full h-[253px] p-[30px] mb-4 flex items-end shadow-lg">
+                                </div>
+                                <div className="hover:-translate-y-1 hover:scale-95 transition ease-in-out bg-[url('./assets/edukasi/gridEdukasi3.png')] bg-cover rounded-[10px] bg-center w-full h-[253px] p-[30px] shadow-lg">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </SlideInUp>
                 
-                <FadeIn>
-                    <div className="w-full py-10 flexabsolute text-center justify-center">
+                <FadeIn> 
+                    <div className="w-full pb-10 flexabsolute text-center justify-center">
                         <span className="text-[#000000] text-4xl font-bold font-['Poppins'] ">
                             Fasilitas
                         </span>{" "}

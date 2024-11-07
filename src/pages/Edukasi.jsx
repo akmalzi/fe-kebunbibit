@@ -33,6 +33,7 @@ function Edukasi(){
                                     gambar={value.gambar}
                                     langkah={value.langkah}
                                     tataCara={value.tataCara}
+                                    tahapan={value.tahapan}
                                 />
                             ))}
                         </div>
@@ -40,7 +41,7 @@ function Edukasi(){
                 </FadeIn>
                 
                 <SlideInUp>
-                    <h2 className="mt-12 text-center text-primaryColor font-bold text-3xl">Artikel Terkait</h2>
+                    <h2 className="mt-20 text-center text-primaryColor font-bold text-3xl">Artikel Terkait</h2>
                 </SlideInUp>
                 <SlideInUp>
                     <div className="flex justify-center mt-5 gap-9 mb-12">

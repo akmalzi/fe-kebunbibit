@@ -6,6 +6,7 @@ import Edukasi from "../pages/Edukasi"
 import Forum from "../pages/Forum"
 import Navigasi from "../pages/Navigasi"
 import Fasilitas from "../pages/Fasilitas"
+import Ulasan from "../pages/Ulasan"
 
 
 function RootLayout(){
@@ -19,6 +20,7 @@ function RootLayout(){
                 <Route path={"/forum"} element={<Forum/>}/>
                 <Route path={"/navigasi"} element={<Navigasi/>}/>
                 <Route path={"/fasilitas"} element={<Fasilitas/>}/>
+                <Route path={"/ulasan"} element={<Ulasan/>}/>
             </Routes>
         </>
     )

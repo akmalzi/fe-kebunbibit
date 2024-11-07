@@ -13,7 +13,7 @@ function CustomerReviews(){
                     ))}
                 </div>
                 <div className="w-full flex mt-2 justify-end font-bold">
-                    <Link to="" className="text-primaryColor text-lg mr-2">Lihat selanjutnya</Link>
+                    <Link to="/ulasan" className="text-primaryColor text-lg mr-2">Lihat selanjutnya</Link>
                 </div>
             </section>
         </>

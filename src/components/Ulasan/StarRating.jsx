@@ -17,10 +17,10 @@ function StarRating() {
             onClick={() => setRating(starValue)}
             onMouseEnter={() => setHover(starValue)}
             onMouseLeave={() => setHover(0)}
-            className={`text-2xl ${
+            className={`text-[26px] my-1 ${
               starValue <= (hover || rating) ? 'text-yellow-400' : 'text-gray-300'
             }`}
-          >
+           >
             ★
           </button>
           {console.log(rating)}
