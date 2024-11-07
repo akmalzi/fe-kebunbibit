@@ -19,6 +19,7 @@ function HomePage() {
     return (
         <>
             <Navbar/>
+            {/* <NavbarResponsive/> */}
             <section className="pb-4 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/>
                 <SlideInLeft>

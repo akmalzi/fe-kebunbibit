@@ -9,10 +9,10 @@ function TelusuriButton() {
   };
 
   return (
-    <div className="flex flex-col items-center relative">
+    <div className="flex flex-col md-2:items-center items-start relative">
       <button
         onClick={togglePopup}
-        className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600 mb-2"
+        className="md-2:mx-3 mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600 mb-2"
       >
         Telusuri
       </button>
@@ -22,7 +22,7 @@ function TelusuriButton() {
           <Link
             onClick={() => setIsOpen(false)}
             to="/navigasi"
-            className="block text-lg font-semibold py-2 w-full hover:bg-primary-500 rounded-t-lg px-4"
+            className="block text-lg font-semibold py-2 w-full hover:bg-primary-700 rounded-t-lg px-4"
           >
             Navigasi
           </Link>
@@ -30,7 +30,7 @@ function TelusuriButton() {
           <Link
             onClick={() => setIsOpen(false)}
             to="/fasilitas"
-            className="block text-lg font-semibold py-2 w-full hover:bg-primary-500 rounded-b-lg px-4"
+            className="block text-lg font-semibold py-2 w-full hover:bg-primary-700 rounded-b-lg px-4"
           >
             Fasilitas
           </Link>

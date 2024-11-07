@@ -17,6 +17,9 @@ export default {
         "primary-900" : "#36500f",
         "primary-950" : "#2a3e0c",
       },
+      screens: {
+        'md-2': '912px',     
+      },
       dropShadow: {
         text : '0px 4px 4px rgba(0, 0, 0, 0.25)',
       },

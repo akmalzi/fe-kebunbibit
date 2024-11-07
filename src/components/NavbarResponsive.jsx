@@ -8,7 +8,7 @@ function NavbarResponsive(){
     };
 
     return (
-        <nav className="bg-gray-800 text-white p-4">
+        <nav className="bg-gray-800 text-white p-4 sticky">
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold">My Website</h1>
                 
@@ -39,8 +39,7 @@ function NavbarResponsive(){
 
             {/* Mobile Sidebar */}
             <div 
-                className={`md:hidden fixed inset-y-0 left-0 w-64 bg-gray-800 text-white transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out`}
-            >
+                className={`md:hidden fixed z-50 inset-y-0 left-0 w-64 bg-gray-800 text-white transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out`}>
                 <div className="p-4 flex justify-between items-center">
                     <h2 className="text-xl font-bold">Menu</h2>
                     <button 
