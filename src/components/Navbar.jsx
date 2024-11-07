@@ -5,21 +5,21 @@ import TelusuriButton from "./TelusuriButton"
 function Navbar(){
     return (
         <>
-            <nav className="flex w-full h-fit py-4 px-[18px] justify-between items-center bg-white">
+            <nav className="flex w-full h-fit py-4 px-[18px] justify-between items-center sticky top-0 z-50 bg-white">
                 <img src={imgLogo} alt="" width="136px"/>
                 <div>
                     <ul className="flex">
                         <li>
-                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/"}>Beranda</Link>
+                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600" to={"/"}>Beranda</Link>
                         </li>
                         <li>
-                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/katalog"}>Katalog</Link>
+                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600" to={"/katalog"}>Katalog</Link>
                         </li>
                         <li>
-                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/edukasi"}>Edukasi</Link>
+                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600" to={"/edukasi"}>Edukasi</Link>
                         </li>
                         <li>
-                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primaryColor" to={"/forum"}>Forum</Link>
+                            <Link className="mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600" to={"/forum"}>Forum</Link>
                         </li>
                         <li>
                             <TelusuriButton/>

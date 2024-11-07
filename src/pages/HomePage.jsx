@@ -4,6 +4,7 @@ import Facilities from "../components/HomePage/Facilities";
 import CustomerReviews from "../components/HomePage/CustomersReview";
 import MapSection from "../components/HomePage/MapSection";
 import Navbar from "../components/Navbar"
+import NavbarResponsive from "../components/NavbarResponsive";
 import Footer from "../components/Footer"
 import SlideInUp from "../Animation/ScrollAnimation/SlideInUp"
 import SlideInRight from "../Animation/ScrollAnimation/SlideInRight"

@@ -8,7 +8,7 @@ function SecondHero(){
                     <div className="flex py-20 px-16 h-fit">
                         <div className="w-1/2 min-h-full flex items-center">
                             <div>
-                                <h2 className="text-primaryColor text-[56px] leading-[110%] font-bold">
+                                <h2 className="text-primary-600 text-[56px] leading-[110%] font-bold">
                                     Kebun Bibit <br />
                                     Wonorejo
                                 </h2>

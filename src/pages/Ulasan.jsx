@@ -1,8 +1,7 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import dataUlasan from "../data/dummy/ulasan-list.json"
+import UlasanList from "../components/Ulasan/UlasanList"
 import UlasanForm from "../components/Ulasan/UlasanForm"
-import UlasanCard from "../components/Ulasan/UlasanCard"
 import CustomerRatingStars from "../components/Ulasan/CustomerRating"
 
 function Ulasan(){
@@ -22,9 +21,7 @@ function Ulasan(){
                     <UlasanForm/>
                 </div>
                 <div className="py-4 px-6 border-l-[2px] w-full md:w-2/3 overflow-y-auto space-y-6 p-4">
-                    {dataUlasan.map((item, index) => (
-                        <UlasanCard rating={item.rate} image={item.image} username={item.username} review={item.review} date={item.date} key={index}/>
-                    ))}
+                    <UlasanList/>
                 </div>
             </section>
             <Footer/>
