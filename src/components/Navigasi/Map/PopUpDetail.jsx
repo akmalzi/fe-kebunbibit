@@ -5,7 +5,7 @@ import AutoImageChanger from "../../../Animation/AutoImageChanger"
 function PopUpDetail(props){
     return(
         <>
-            <div className='w-full h-screen fixed top-0 left-0 z-50 bg-black bg-opacity-50'>
+            <div className='w-full h-screen fixed top-0 left-0 z-[50] bg-black bg-opacity-50'>
                 <div className='w-2/4 h-fit py-10 px-20 bg-[#F8F9FA] rounded-xl shadow-xl fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
                     <button onClick={props.onClick} className="relative right-[40px] text-black hover:text-primary-600 transition duration-200 ease-in flex items-center justify-center">
                         <img src={backIcon} alt="" className="w-3 h-3"/>

@@ -12,7 +12,7 @@ function Navbar(){
 
     return (
         <>
-            <nav className="flex w-full h-fit py-4 px-2 lg:px-[18px] justify-between items-center sticky top-0 z-40 bg-white">
+            <nav className="flex w-full h-fit py-4 px-2 lg:px-[18px] justify-between items-center sticky top-0 z-[5] bg-white">
                 <img src={imgLogo} alt="" width="136px"/>
                 <div>
                     <ul className="hidden md-2:flex">

@@ -4,7 +4,6 @@ import Facilities from "../components/HomePage/Facilities";
 import CustomerReviews from "../components/HomePage/CustomersReview";
 import MapSection from "../components/HomePage/MapSection";
 import Navbar from "../components/Navbar"
-import NavbarResponsive from "../components/NavbarResponsive";
 import Footer from "../components/Footer"
 import SlideInUp from "../Animation/ScrollAnimation/SlideInUp"
 import SlideInRight from "../Animation/ScrollAnimation/SlideInRight"
@@ -19,7 +18,6 @@ function HomePage() {
     return (
         <>
             <Navbar/>
-            {/* <NavbarResponsive/> */}
             <section className="pb-4 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/>
                 <SlideInLeft>
