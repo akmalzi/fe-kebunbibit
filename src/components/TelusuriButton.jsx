@@ -12,7 +12,7 @@ function TelusuriButton() {
     <div className="flex flex-col md-2:items-center items-start relative">
       <button
         onClick={togglePopup}
-        className="md-2:mx-3 mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600 mb-2"
+        className="md-2:mx-5 text-lg transition duration-200 ease-in text-black hover:text-primary-600 mb-2"
       >
         Telusuri
       </button>

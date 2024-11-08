@@ -19,6 +19,7 @@ export default {
       },
       screens: {
         'md-2': '912px',     
+        'lg-2': '1112px',     
       },
       dropShadow: {
         text : '0px 4px 4px rgba(0, 0, 0, 0.25)',
