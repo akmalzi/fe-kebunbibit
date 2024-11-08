@@ -17,13 +17,13 @@ function Katalog(){
                 <FirstHero imageUrl={heroImg} title={heroTitle} subTitle={heroSubtitle}/> 
                 <FadeIn>
                     <div className="flex flex-col items-center mt-[72px]">    
-                        <h1 className="font-bold text-4xl text-center text-primaryColor mb-[64px]">Temukan ragam bibit unggul untuk <br />
+                        <h1 className="text-primary-600 font-bold text-2xl md:text-3xl lg:text-4xl text-center text-primaryColor mb-[64px]">Temukan ragam bibit unggul untuk <br />
                         mempercantik lingkungan Anda</h1>  
                     </div>
                 </FadeIn>
                 <FadeIn>
-                    <div className="flex justify-center">
-                        <div className="flex flex-wrap w-5/6 ">
+                    <div className="flex justify-center items-center">
+                        <div className="grid grid-cols-2 xl:grid-cols-3 gap-4">
                             {dataKatalog.map((value, index) => (
                                 <CardKatalog
                                     key={index}

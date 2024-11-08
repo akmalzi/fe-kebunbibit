@@ -21,7 +21,8 @@ function DetailKatalog(){
                     return (
                     <CardDetail
                         key={index}
-                        judul={value.judul}
+                        judul={value.nama}
+                        namaLatin={value["nama-latin"]}
                         penjelasan={value.penjelasan}
                         gambar={value.image}
                     />

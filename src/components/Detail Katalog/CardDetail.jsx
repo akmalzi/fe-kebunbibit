@@ -1,14 +1,22 @@
-function CardDetail({ judul, penjelasan, gambar }){
+function CardDetail({ judul, namaLatin, penjelasan, gambar }){
   return (
     <>
-      <div className="w-full px-20 h-fit my-20">
-        <div className="grid grid-cols-2 mt-11">
-          <img src={gambar} alt="" className="w-11/12 h-auto rounded-lg shadow-lg" />
-          <div className="flex flex-col justify-center">
-            <h2 className="text-[#73ba10] text-[40px] font-bold font-poppins">
+      <div className="w-full px-4 xl:px-20 h-fit my-8 xl:my-20">
+        <div className="flex mt-11 flex-col md-2:flex-row">
+          <div className="flex flex-col xl:items-center xl:flex-row w-full mx-auto xl:w-5/12">
+            <h1 className="block md-2:hidden align-start text-primary-600 text-[40px] font-bold font-poppins mb-2">
+            {judul}
+            </h1>
+            <img src={gambar} alt="" className="xl:w-full h-full rounded-lg shadow-lg" />
+          </div>
+          <div className="w-full mt-4 xl:mt-0 xl:w-7/12 flex flex-col px-0 md-2:px-4 justify-center">
+            <h1 className="hidden md-2:block text-primary-600 text-[40px] font-bold font-poppins">
               {judul}
+            </h1>
+            <h2 className="text-primary-500 text-[32px] font-bold font-poppins">
+              {namaLatin}
             </h2>
-            <p className="text-black text-2xl font-regular font-poppins mt-8">
+            <p className="text-black text-[20px] font-regular font-poppins mt-4">
               {penjelasan}
             </p>
           </div>
