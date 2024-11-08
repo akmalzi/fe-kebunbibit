@@ -18,6 +18,7 @@ export default {
         "primary-950" : "#2a3e0c",
       },
       screens: {
+        'xs' : '305px',
         'md-2': '912px',     
         'lg-2': '1112px',     
       },

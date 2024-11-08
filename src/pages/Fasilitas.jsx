@@ -15,19 +15,19 @@ function Fasilitas(){
             <section className="pb-6 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={title} subTitle={subTitle}/>
                 <SlideInUp>
-                    <div className="flex max-h-[480px] my-20 px-24">
-                        <div className="w-3/5 flex flex-col justify-center pr-16">
-                            <div className="text-[42px] font-semibold leading-tight mb-4">
+                    <div className="flex flex-col xl:flex-row max-h-[480px] my-20 px-24">
+                        <div className="w-full xl:w-3/5 flex flex-col justify-center xl:pr-16">
+                            <div className="text-center xl:text-start text-[42px] font-semibold leading-tight mb-4">
                                 Dapatkan pengalaman yang tak terlupakan di Kebun Bibit Wonorejo.
                             </div>
-                            <div className="text-xl font-normal">
+                            <div className="text-center xl:text-start text-xl font-normal">
                                 Nikmati keindahan alam yang memukau di Kebun Bibit Wonorejo, di mana
                                 Anda dapat menjelajahi beragam flora cantik yang menghiasi setiap
                                 sudut kebun. Dari pohon-pohon rimbun hingga bunga-bunga
                                 berwarna-warni.
                             </div>
                         </div>
-                        <div className="w-2/5 min-h-4 flex">
+                        <div className="hidden w-2/5 min-h-4 xl:flex">
                             <div className="hover:-translate-y-1 hover:scale-95 transition ease-in-out  w-1/2 h-full mr-4 bg-[url('./assets/edukasi/gridEdukasi1.png')] bg-cover bg-center rounded-[10px] p-[30px] shadow-lg">
                             </div>
                             <div className="w-1/2 flex flex-col">
@@ -41,7 +41,7 @@ function Fasilitas(){
                 </SlideInUp>
                 
                 <FadeIn> 
-                    <div className="w-full pb-10 flexabsolute text-center justify-center">
+                    <div className="w-full pb-10 flexabsolute text-center justify-center mt-52 md:mt-0">
                         <span className="text-[#000000] text-4xl font-bold font-['Poppins'] ">
                             Fasilitas
                         </span>{" "}
