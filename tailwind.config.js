@@ -8,6 +8,9 @@ export default {
     extend: {
       colors:{
         primaryColor : "#74BA10",
+        hoverPrimaryColor : "#3A5A0D",
+        deleteColor : "#b91c1c",
+        deleteHoverColor : "#a71919",
         bgGrayColor : "#F8F9FA"
       },
       dropShadow: {
