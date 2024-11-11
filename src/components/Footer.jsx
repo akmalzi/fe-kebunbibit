@@ -1,7 +1,7 @@
 function Footer(){
     return(
         <>
-            <footer className="bg-primaryColor px-[72px]">
+            <footer className="bg-primary-600 px-4 md-2:px-[72px]">
                 <div className="mx-auto w-full py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">

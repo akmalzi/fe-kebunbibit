@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import CardDetail from "../components/CardDetail";
+import CardDetail from "../components/Detail Katalog/CardDetail";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import FirstHero from "../components/FirstHero";
@@ -21,7 +21,8 @@ function DetailKatalog(){
                     return (
                     <CardDetail
                         key={index}
-                        judul={value.judul}
+                        judul={value.nama}
+                        namaLatin={value["nama-latin"]}
                         penjelasan={value.penjelasan}
                         gambar={value.image}
                     />

@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import FirstHero from "../components/FirstHero"
-import CardEdukasi from "../components/CardEdukasi"
-import CardArtikel from "../components/CardArtikel"
+import CardEdukasi from "../components/Edukasi/CardEdukasi"
+import CardArtikel from "../components/Edukasi/CardArtikel"
 import heroImg from "/assets/heroImg/edukasi-heroImg.png"
 import dataEdukasi from "../data/dataEdukasi.json"
 import dataArtikel from "../data/dataArtikel.json"
@@ -26,13 +26,14 @@ function Edukasi(){
                 </FadeIn>
                 <FadeIn>
                     <div className="flex w-full justify-center">
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                             {dataEdukasi.map((value, index) => (
                                 <CardEdukasi
                                     key={index}
                                     gambar={value.gambar}
                                     langkah={value.langkah}
                                     tataCara={value.tataCara}
+                                    tahapan={value.tahapan}
                                 />
                             ))}
                         </div>
@@ -40,10 +41,10 @@ function Edukasi(){
                 </FadeIn>
                 
                 <SlideInUp>
-                    <h2 className="mt-12 text-center text-primaryColor font-bold text-3xl">Artikel Terkait</h2>
+                    <h2 className="mt-20 text-center text-primaryColor font-bold text-3xl">Artikel Terkait</h2>
                 </SlideInUp>
                 <SlideInUp>
-                    <div className="flex justify-center mt-5 gap-9 mb-12">
+                    <div className="flex justify-center flex-wrap xl:flex-nowrap mt-5 gap-9 mb-12">
                         {dataArtikel.map((value, index) => (
                         <CardArtikel
                             key={index}

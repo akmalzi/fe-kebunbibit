@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 function SlideInUp({ children }) {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.3,
+    threshold: 0.2,
   });
 
   return (

@@ -1,8 +1,8 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import FirstHero from "../components/FirstHero"
-import Map from "../components/Map"
-import CardFavFasilitas from "../components/CardFavFasilitas"
+import Map from "../components/Navigasi/Map"
+import CardFavFasilitas from "../components/Navigasi/CardFavFasilitas"
 import heroImg from "/assets/heroImg/navigasi-heroImg.png"
 import SlideInUp from "../Animation/ScrollAnimation/SlideInUp"
 
@@ -16,7 +16,7 @@ function Navigasi(){
             <Navbar/>
             <section className="pb-4 animate-fade-in">
                 <FirstHero imageUrl={heroImg} title={title} subTitle={subTitle}/> 
-                <div className="mt-20 px-40">
+                <div className="mt-20 px-4 md:px-20">
                     <SlideInUp>
                         <h2 className="text-end text-4xl font-bold text-primaryColor">Temukan Spot Menarik <br />
                         di Kebun Bibit Wonorejo</h2>
@@ -30,7 +30,7 @@ function Navigasi(){
                     </SlideInUp>
                     
                     <SlideInUp>
-                        <div className="w-full flex justify-evenly mt-6 mb-16">
+                        <div className="w-full flex-wrap lg:flex-no flex justify-evenly mt-2 xl:mt-6 mb-16">
                             <CardFavFasilitas/>
                             <CardFavFasilitas/>
                             <CardFavFasilitas/>

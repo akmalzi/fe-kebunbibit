@@ -21,7 +21,7 @@ function App() {
     <div className="relative font-poppins">
       {isLoading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-          <img src={ImageLogo} className="w-[300px] absolute top-1/2 -translate-y-1/2" alt="Loading Logo" />
+          <img src={ImageLogo} className="w-[300px] absolute top-1/2 -translate-y-1/2 animate-fade-in-out" alt="Loading Logo" />
         </div>
       ) : (
         <div className="opacity-0 animate-fade-in">

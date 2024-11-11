@@ -7,6 +7,7 @@ import Forum from "../pages/Forum"
 import Navigasi from "../pages/Navigasi"
 import Fasilitas from "../pages/Fasilitas"
 import DetailForum from "../pages/DetailForum"
+import Ulasan from "../pages/Ulasan"
 
 
 function RootLayout(){
@@ -21,6 +22,7 @@ function RootLayout(){
                 <Route path={"/forum/:parameter"} element={<DetailForum />}/>
                 <Route path={"/navigasi"} element={<Navigasi/>}/>
                 <Route path={"/fasilitas"} element={<Fasilitas/>}/>
+                <Route path={"/ulasan"} element={<Ulasan/>}/>
             </Routes>
         </>
     )
