@@ -39,12 +39,14 @@ function Forum() {
                                 </Link>
                             ))}
                         </div>
-                        <ForumUtils
-                            // placeholder for onSearchChange and onOrderChange 
-                            onSearchChange={() => console.log("search change")}
-                            onOrderChange={() => console.log("order change")}
-                            onSubmit={() => console.log("submit")}
-                        />
+                        <div className="col-span-2">
+                            <ForumUtils
+                                // placeholder for onSearchChange and onOrderChange 
+                                onSearchChange={() => console.log("search change")}
+                                onOrderChange={() => console.log("order change")}
+                                onSubmit={() => console.log("submit")}
+                            />
+                        </div>
                     </div>
                 </FadeIn>
             </section >

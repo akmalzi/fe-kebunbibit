@@ -11,7 +11,7 @@ export default {
         hoverPrimaryColor : "#3A5A0D",
         deleteColor : "#b91c1c",
         deleteHoverColor : "#a71919",
-        bgGrayColor : "#F8F9FA"
+        bgGrayColor : "#F8F9FA",
         "primary-300" : "#f1f7e9",
         "primary-400" : "#d5e7ba",
         "primary-500" : "#92C14E",
