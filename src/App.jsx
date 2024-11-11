@@ -4,6 +4,7 @@ import LoginLayout from "./layouts/LoginLayout"
 import RegisterLayout from "./layouts/RegisterLayout"
 import ForgotPassLayout from "./layouts/ForgotPassLayout"
 import ImageLogo from "/assets/logo-app.png"
+import ProfileLayout from "./layouts/ProfileLayout"
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
           <LoginLayout />
           <RegisterLayout />
           <ForgotPassLayout />
+          <ProfileLayout />
         </div>
       )}
     </div>
