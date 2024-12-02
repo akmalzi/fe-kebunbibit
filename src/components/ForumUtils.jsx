@@ -10,7 +10,7 @@ function ForumUtils(props) {
     }
 
     return (
-        <div className="col-span-2 flex flex-col">
+        <div className="flex flex-col">
             <label htmlFor="search" className="relative flex items-center text-gray-300 focus-within:text-gray-600 w-full">
                 <svg
                     className="absolute pointer-events-none size-8 top-1.5 left-1.5"
