@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { formatTimeDifference } from "../utils/formatTime";
 
 function DetailDiskusi(props) {
@@ -30,5 +31,15 @@ function DetailDiskusi(props) {
         </div>
     )
 };
+
+DetailDiskusi.propTypes = {
+    nama : PropTypes.string,
+    created_at : PropTypes.string,
+    judul : PropTypes.string,
+    deskripsi : PropTypes.string,
+    tags : PropTypes.string,
+    reply_count : PropTypes.string,
+    photo : PropTypes.string
+}
 
 export default DetailDiskusi;

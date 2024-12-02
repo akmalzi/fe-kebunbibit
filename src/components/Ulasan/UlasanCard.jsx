@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import CustomerRating from "./CustomerRating"
 
 function UlasanCard(props){
@@ -14,6 +15,14 @@ function UlasanCard(props){
             </div>
         </>
     )
+}
+
+UlasanCard.propTypes = {
+    rating : PropTypes.string,
+    image : PropTypes.string,
+    username : PropTypes.string,
+    review : PropTypes.string,
+    date : PropTypes.string,
 }
 
 export default UlasanCard

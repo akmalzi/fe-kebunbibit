@@ -1,5 +1,6 @@
 import { useState , useEffect} from "react"
 import ProfileImg from "/assets/users/user-profile.png"
+import PropTypes from "prop-types"
 
 function ReviewCard(props){
     const [review, setReview] = useState("Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut blanditiis fugiat quas laborum fugit recusandae vitae placeat necessitatibus. Reprehenderit delectus ad fugit ducimus nisi minima quaerat illum at corrupti.")
@@ -26,6 +27,13 @@ function ReviewCard(props){
             </div>
         </>
     )
+}
+
+ReviewCard.propTypes = {
+    review : PropTypes.string,
+    userImg : PropTypes.string,
+    username : PropTypes.string,
+    role : PropTypes.string,
 }
 
 export default ReviewCard

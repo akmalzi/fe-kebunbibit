@@ -1,4 +1,5 @@
-import {  formatTimeDifference } from '../utils/formatTime';
+import PropTypes from 'prop-types';
+import { formatTimeDifference } from '../utils/formatTime';
 
 function DiskusiReply(props) {
     return (
@@ -20,5 +21,12 @@ function DiskusiReply(props) {
         </div>
     )
 };
+
+DiskusiReply.propTypes = {
+    name : PropTypes.string,
+    photo : PropTypes.string,
+    created_at : PropTypes.string,
+    comment : PropTypes.string
+}
 
 export default DiskusiReply;

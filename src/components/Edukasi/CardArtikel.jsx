@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 function CardArtikel({ gambar, judul, link }){
@@ -19,5 +20,11 @@ function CardArtikel({ gambar, judul, link }){
     </>
   );
 };
+
+CardArtikel.propTypes = {
+  gambar : PropTypes.string,
+  judul : PropTypes.string,
+  link : PropTypes.string
+}
 
 export default CardArtikel;

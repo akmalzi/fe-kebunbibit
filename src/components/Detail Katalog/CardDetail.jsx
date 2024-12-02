@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function CardDetail({ judul, namaLatin, penjelasan, gambar }){
   return (
     <>
@@ -25,5 +27,12 @@ function CardDetail({ judul, namaLatin, penjelasan, gambar }){
     </>
   );
 };
+
+CardDetail.propTypes = {
+  judul:PropTypes.string,
+  namaLatin : PropTypes.string,
+  penjelasan : PropTypes.string,
+  gambar : PropTypes.string
+}
 
 export default CardDetail;

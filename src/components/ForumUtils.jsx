@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TagsList from "./TagsList"
 import PopUpDiskusi from "./PopUpDiskusi";
+import PropTypes from "prop-types";
 
 function ForumUtils(props) {
     const [isOpen, setIsOpen] = useState(false);
@@ -76,5 +77,10 @@ function ForumUtils(props) {
         </div>
     )
 };
+
+ForumUtils.propTypes = {
+    onSearchChange : PropTypes.string,
+    onOrderChange : PropTypes.string
+}
 
 export default ForumUtils;

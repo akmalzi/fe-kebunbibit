@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function CustomerRatingStars({ rating }){
     return(
         <>
@@ -18,6 +20,10 @@ function CustomerRatingStars({ rating }){
             </div>
         </>
     )
+}
+
+CustomerRatingStars.propTypes = {
+    rating : PropTypes.string 
 }
 
 export default CustomerRatingStars

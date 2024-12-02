@@ -6,7 +6,6 @@ import CardFavFasilitas from "../components/Navigasi/CardFavFasilitas"
 import heroImg from "/assets/heroImg/navigasi-heroImg.png"
 import SlideInUp from "../Animation/ScrollAnimation/SlideInUp"
 
-
 function Navigasi(){
     const title = "Navigasi Kebun Bibit Wonorejo"
     const subTitle = "Temukan berbagai fasilitas menarik di Kebun Bibit Wonorejo, mulai dari pusat informasi bibit hingga ruang belajar yang nyaman, semuanya dirancang untuk membantu Anda memahami cara menanam dan merawat tanaman dengan baik."

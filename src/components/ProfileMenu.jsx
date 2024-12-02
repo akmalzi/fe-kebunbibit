@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 
-function ProfileMenu(props) {
+function ProfileMenu({fullName}) {
     const location = useLocation();
 
     return (
@@ -10,8 +11,8 @@ function ProfileMenu(props) {
                 alt=""
                 className="rounded-full size-36 shadow-md"
             />
-            <p>
-                {props.User.fullName}
+            <p className="bg-slate-600">
+                {fullName}
             </p>
             <div className="flex flex-col w-full gap-y-6 justify-start">
                 <Link
@@ -66,5 +67,9 @@ function ProfileMenu(props) {
         </div>
     )
 };
+
+ProfileMenu.propTypes = {
+    fullName : PropTypes.string
+}
 
 export default ProfileMenu;

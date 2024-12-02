@@ -1,6 +1,7 @@
 import img from "/assets/heroImg/katalog-heroImg.png"
 import backIcon from "/assets/navigasi/back-icon.svg"
 import AutoImageChanger from "../../../Animation/AutoImageChanger"
+import PropTypes from "prop-types"
 
 function PopUpDetail(props){
     return(
@@ -27,6 +28,10 @@ function PopUpDetail(props){
             </div>
         </>
     )
+}
+
+PopUpDetail.propTypes = {
+    onClick : PropTypes.func
 }
 
 export default PopUpDetail

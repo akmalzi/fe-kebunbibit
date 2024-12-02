@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import { useState, useEffect} from "react"
 
 function FirstHero(props){
@@ -24,5 +25,12 @@ function FirstHero(props){
         </>
     )
 }
+
+FirstHero.propTypes = {
+    title : PropTypes.string,
+    subTitle : PropTypes.string,
+    imageUrl : PropTypes.string
+}
+
 
 export default FirstHero

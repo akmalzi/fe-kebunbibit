@@ -75,7 +75,7 @@ function Profile() {
                         </div>
                     </div>
                     <div className="col-span-1">
-                        <ProfileMenu User={User} />
+                        <ProfileMenu fullName={User.fullName}/>
                     </div>
                 </div>
             </section>

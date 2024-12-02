@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function PopUpDiskusi(props) {
     return (
         <div
@@ -48,6 +50,11 @@ function PopUpDiskusi(props) {
             </div>
         </div>
     )
+}
+
+PopUpDiskusi.propTypes = {
+    onClick : PropTypes.func,
+    onSubmit : PropTypes.func
 }
 
 export default PopUpDiskusi;
