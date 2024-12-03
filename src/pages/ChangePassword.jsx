@@ -10,25 +10,29 @@ function ChangePassword() {
     const [isVisible3, setIsVisible3] = useState(false);
 
     const handleVisible = (num) => {
-        if (num === 1) {
-            setIsVisible1(!isVisible1);
-        } else if (num === 2) {
-            setIsVisible2(!isVisible2);
-        } else {
-            setIsVisible3(!isVisible3);
+        switch(num){
+            case 1 : 
+                setIsVisible1(!isVisible1);
+                break;
+            case 2 : 
+                setIsVisible2(!isVisible2); 
+                break;
+            default : 
+                setIsVisible3(!isVisible3);
         }
     }
+
     return (
         <>
             <UserNavbar />
-            <section className="py-20 px-40 animate-fade-in">
-                <div className="grid grid-cols-4 gap-x-12">
-                    <div className="col-span-3 border-[1px] border-gray-300 rounded-xl p-12 shadow-md">
+            <section className="p-12 md:py-20 xl:px-20 md:px-40 animate-fade-in">
+                <div className="flex xl:flex-row flex-col gap-x-8">
+                    <div className="w-full order-2 xl:order-1 xl:w-3/4 border-[1px] border-gray-300 rounded-xl p-12 shadow-md">
                         <h2 className="mb-8 text-2xl font-semibold text-primaryColor">
                             Ubah Password
                         </h2>
-                        <div className="flex flex-col justify-between w-1/2">
-                            <form className="flex flex-col gap-y-4 mb-36" id="formProfile" action="">
+                        <div className="flex flex-col justify-between w-full">
+                            <form className="flex flex-col gap-y-4 mb-12 xl:mb-36" id="formProfile" action="">
                                 <label htmlFor="oldPassword" className="relative block">
                                     <span className="font-semibold">Password Lama</span>
                                     <input
@@ -151,7 +155,7 @@ function ChangePassword() {
                             </button>
                         </div>
                     </div>
-                    <div className="col-span-1">
+                    <div className="w-full order-1 mb-8 xl:order-2 xl:mb-0 xl:w-1/4">
                         <ProfileMenu User={User} />
                     </div>
                 </div>

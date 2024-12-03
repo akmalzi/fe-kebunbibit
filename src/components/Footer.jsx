@@ -15,9 +15,9 @@ function Footer(){
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase dark:text-white">Kontak</h2>
-                            <ul className="text-black font-medium">
-                                <li className="mb-4">
+                            <h2 className="mb-4 text-lg font-medium text-gray-900 dark:text-white">Kontak</h2>
+                            <ul className="text-black">
+                                <li className="mb-2">
                                     <a href="https://flowbite.com/" className="font-[14px] hover:underline">kebunbibit@gmail.com</a>
                                 </li>
                                 <li>
@@ -25,10 +25,10 @@ function Footer(){
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase dark:text-white">Menu</h2>
-                            <ul className="text-black font-medium">
-                                <li className="mb-4">
+                        <div className="mx-auto">
+                            <h2 className="mb-4 text-lg font-medium text-gray-900 dark:text-white">Menu</h2>
+                            <ul className="text-black">
+                                <li className="mb-2">
                                     <a href="https://github.com/themesberg/flowbite" className="hover:underline ">Profil Akun</a>
                                 </li>
                                 <li>
@@ -37,9 +37,9 @@ function Footer(){
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase dark:text-white">Informasi Lain</h2>
-                            <ul className="text-black font-medium">
-                                <li className="mb-4">
+                            <h2 className="mb-4 text-lg font-medium text-gray-900 dark:text-white">Informasi Lain</h2>
+                            <ul className="text-black">
+                                <li className="mb-2">
                                     <a href="#" className="hover:underline">FAQ</a>
                                 </li>
                                 <li>

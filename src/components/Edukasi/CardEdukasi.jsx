@@ -2,29 +2,30 @@ import PropTypes from "prop-types";
 
 function CardEdukasi({ gambar, langkah, tataCara, tahapan }) {
   return (
-    <div className="border-2 w-[380px] h-[520px] rounded-lg">
-      <div className="flex px-2">
-        <img
-          width={100}
-          src={gambar}
-          alt="katalog1"
-          className="rounded-[10px] m-7"
-        />
-        <h2 className="text-black text-2xl my-auto pl-3 font-medium font-['Poppins'] leading-relaxed">
-          {langkah}
-        </h2>
+    <>
+      <div className="flex flex-col xl:grid xl:grid-rows-1 grid-cols-4 mb-10">
+        <div className="">
+          <img
+            width={200}
+            src={gambar}
+            alt="katalog1"
+            className="rounded-[10px] mx-auto"
+          />
+        </div>
+        <div className="text-[#717575] text-2xl col-span-3 font-medium font-['Lora'] pl-7 pr-14">
+          <h2 className="text-black text-2xl leading-relaxed font-['Poppins']">{langkah}</h2>
+
+          <span className="text-[#717575] font-['Poppins'] text-xl font-medium">
+            {tataCara}
+            <ul className="ml-12 pr-14 list-disc">
+              {tahapan.map((value, index) => (
+                <li key={index}>{value}</li>
+              ))}
+            </ul>
+          </span>
+        </div>
       </div>
-      <div className="text-black text-base font-medium font-['Poppins'] pl-7 pr-14">
-        {tataCara}
-      </div>
-      <div>
-        <ul className="text-black text-base font-medium font-['Poppins'] ml-12 pr-14 list-disc">
-          {tahapan.map((value, index) => (
-            <li key={index}>{value}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
+    </>
   );
 }
 

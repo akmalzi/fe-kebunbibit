@@ -5,16 +5,18 @@ function ProfileMenu({fullName}) {
     const location = useLocation();
 
     return (
-        <div className="h-full flex flex-col border-gray-300 ustify-center items-center border-[1px] rounded-xl p-12 shadow-md gap-y-4">
-            <img
-                src="https://via.placeholder.com/150"
-                alt=""
-                className="rounded-full size-36 shadow-md"
-            />
-            <p className="bg-slate-600">
-                {fullName}
-            </p>
-            <div className="flex flex-col w-full gap-y-6 justify-start">
+        <div className="h-full flex flex-col lg:flex-row xl:flex-col border-gray-300 ustify-center items-center border-[1px] rounded-xl p-12 shadow-md gap-y-4">
+            <div className="w-full lg:w-1/4 xl:w-full mb-4 lg:mb-0 flex justify-center items-center flex-col">
+                <img
+                    src="https://via.placeholder.com/150"
+                    alt=""
+                    className="rounded-full size-36 shadow-md"
+                />
+                <p className="mt-2">
+                    {fullName}
+                </p>
+            </div>
+            <div className="flex flex-col w-3/4 ml-7 xl:ml-0 xl:w-full gap-y-6 justify-start">
                 <Link
                     to="/profile"
                     className={`

@@ -7,20 +7,20 @@ function Profile() {
     return (
         <>
             <UserNavbar />
-            <section className="py-20 px-40 animate-fade-in">
-                <div className="grid grid-cols-4 gap-x-12">
-                    <div className="col-span-3 border-[1px] border-gray-300 rounded-xl p-12 shadow-md">
+            <section className="p-12 md:py-20 xl:px-20 md:px-40 animate-fade-in">
+                <div className="flex xl:flex-row flex-col gap-x-8">
+                    <div className="w-full order-2 xl:order-1 xl:w-3/4 border-[1px] border-gray-300 rounded-xl p-8 shadow-md">
                         <h2 className="mb-8 text-2xl font-semibold text-primaryColor">
                             Profil Pengguna
                         </h2>
-                        <div className="flex">
-                            <div className="flex flex-col items-center mx-20">
+                        <div className="flex lg:flex-row flex-col">
+                            <div className="flex flex-row lg:flex-col items-center justify-center lg:mx-8 xl:mx-20">
                                 <img
                                     src="https://via.placeholder.com/150"
                                     alt=""
-                                    className="rounded-full size-36 mb-12 shadow-md"
+                                    className="rounded-full size-36 lg:mb-12 shadow-md"
                                 />
-                                <div className="flex flex-col gap-y-6">
+                                <div className="flex flex-col gap-y-6 ml-8 lg:ml-0">
                                     <button className="py-2 px-8 font-semibold rounded-lg transition-colors bg-primaryColor hover:bg-hoverPrimaryColor text-white shadow-md">
                                         Ganti Profil
                                     </button>
@@ -29,10 +29,10 @@ function Profile() {
                                     </button>
                                 </div>
                             </div>
-                            <div className="flex justify-center border-[1px]">
+                            <div className="flex justify-center border-[1px] lg:my-0 my-8">
                             </div>
-                            <div className="grow flex flex-col justify-between mx-20">
-                                <form className="flex flex-col gap-y-4 mb-36" id="formProfile" action="">
+                            <div className="grow flex flex-col justify-between mx-4 lg:mx-10 xl:mx-16">
+                                <form className="flex flex-col gap-y-4 mb-12 lg:mb-36" id="formProfile" action="">
                                     <label htmlFor="fullname">
                                         <span className="font-semibold">Nama Lengkap</span>
                                         <input
@@ -74,7 +74,7 @@ function Profile() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-1">
+                    <div className="w-full order-1 mb-8 xl:order-2 xl:mb-0 xl:w-1/4">
                         <ProfileMenu fullName={User.fullName}/>
                     </div>
                 </div>

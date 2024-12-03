@@ -17,15 +17,15 @@ function Forum() {
     return (
         <>
             <Navbar />
-            <section className="mb-12 px-16 animate-fade-in">
+            <section className="mb-12 md:px-16 px-4 animate-fade-in">
                 <FadeIn>
                     <h1 className="my-12 text-4xl font-bold text-primaryColor">
                         Forum Diskusi
                     </h1>
                 </FadeIn>
                 <FadeIn>
-                    <div className="grid grid-cols-8 justify-between gap-x-32">
-                        <div className="col-span-6 flex flex-col gap-y-8">
+                    <div className="grid grid-cols-8 xl:grid-rows-1 justify-between gap-x-16">
+                        <div className="col-span-8 xl:col-span-6 flex flex-col gap-y-8">
                             {Diskusi.map((value, index) => (
                                 <Link key={index} to={`/forum/${value.slug}`}>
                                     <MainDiskusi
@@ -39,7 +39,7 @@ function Forum() {
                                 </Link>
                             ))}
                         </div>
-                        <div className="col-span-2">
+                        <div className="col-span-8 row-start-1 xl:col-span-2 mb-12 xl:mb-0">
                             <ForumUtils
                                 // placeholder for onSearchChange and onOrderChange 
                                 onSearchChange={() => console.log("search change")}
